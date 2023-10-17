@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 40px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <header><img src="images/logo.svg" alt="logo" class="logo">
+  <div class="score"><div class="you points"><h3>You</h3><h1 class="you-points">0</h1></div><div class="cpu points"><h3>HOUSE</h3><h1 class="cpu-points">0</h1></div></div>
+  </header>
+  <main>
+    <div class="choice-menu">
+    <img src="images/bg-triangle.svg" alt="bg-triangle" class="bg-triangle">
+    <div class="paper active"><div class="choice-box"><img src="images/icon-paper.svg" alt="p" class="choice-photo"></div></div>
+    <div class="scissors active"><div class="choice-box"><img src="images/icon-scissors.svg" alt="s" class="choice-photo"></div></div>
+    <div class="rock active"><div class="choice-box"><img src="images/icon-rock.svg" alt="r" class="choice-photo"></div></div>
+  </div>
+  <div class="vs-menu">
+    <div class="you-div side"><p>You Picked</p><div class="light-up left"></div></div>
+    <div class="cpu-div side"><p>The House Picked</p><div class="light-up right"></div></div>
+  </div>
+  
+  </main>
+  <div class="again-div"><h2 class="result"></h2><button class="pa-button">Play again</button><button class="reset-button">Reset Score</button></div>
+  <footer><button id="rules-button">rules</button>
+  <div class="rules-div"><div id="rules-header"><h2 id="rule-title">RULES</h2><img src="images/icon-close.svg" alt="fa-x" class="fa-x"></div><img src="images/image-rules.svg" alt="rule-photo" id="rule-photo"></div>
+  <div class="faded-background"></div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="http://instagram.com/yurikoller">Yuri Koller</a>.
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
