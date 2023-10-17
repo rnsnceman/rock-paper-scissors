@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rnsnceman/rock-paper-scissors)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Site](https://rnsnceman.github.io/rock-paper-scissors/)
 
 ## My process
 
