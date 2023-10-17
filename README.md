@@ -114,4 +114,4 @@ I want to continue pushing my knowledge for things like probabilities, math equa
 
 - Github - [Rnsnceman](https://www.github.com/rnsnceman)
 - Frontend Mentor - [@rnsnceman](https://www.frontendmentor.io/profile/rnsnceman)
-- Twitter - [@yurikoller](https://www.instagram.com/yurikoller)
+- Instagram - [@yurikoller](https://www.instagram.com/yurikoller)
