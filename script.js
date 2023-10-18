@@ -254,12 +254,3 @@ window.addEventListener('DOMContentLoaded', e => {
         }, 300)
     })
 })
-
-
-const Car = {
-    brand: "Suzuki",
-    color: "white",
-    price: 10000
-}
-
-window.localStorage.setItem('car', JSON.stringify(Car));
