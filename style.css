@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
 
+
+
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 auto;
     color: white;
     text-transform: uppercase;
     max-width: 1366px;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px auto;
+    margin: auto;
     max-width: 800px;
     padding: 20px;
     height: 90vh;
+
 }
 
 header {
@@ -46,9 +51,9 @@ h2 {
     justify-content: center;
     background-color: white;
     margin: 2px;
-    padding: 10px;
-    height: 100px;
-    width: 90px;
+    padding: clamp(10px, 3vw, 20px) 10px;
+    height: auto;
+    width: clamp(40px, 14vw, 90px);
 }
 
 .you {
@@ -61,33 +66,35 @@ h2 {
 
 .score {
     margin: 20px;
+    width: clamp(50px, 30vw, 180px);
     display: flex;
     justify-content: space-around;
 }
 
 .logo {
     padding: 20px;
+    width: clamp(60px, 30vw, 200px);
 }
 
 h1 {
     line-height: 0.9;
     margin: 0;
     color: hsl(229, 25%, 31%);
-    font-size: 80px;
+    font-size: clamp(30px, 12vw, 80px);
     font-weight: 700;
 }
 
 h3 {
     color: hsl(229, 64%, 46%);
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: clamp(4px, 5vw, 15px);
     margin: 0;
     line-height: 1.0;
 }
 
 
 main {
-    margin: 30px;
+    margin: 30px 0 10px 0;
 }
 
 footer {
@@ -114,8 +121,8 @@ footer {
 }
 
 .rules-div {
-    width: 400px;
-    height: 400px;
+    width: clamp(300px, 70vw, 400px);
+    height: clamp(300px, 70vw, 400px);
     position: absolute;
     background-color: white;
     margin: 0 auto;
@@ -124,18 +131,17 @@ footer {
     transform: translate(-50%, -50%);
     border-radius: 10px;
     color: hsl(229, 25%, 31%);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    visibility: hidden;
     z-index: 1;
     box-shadow: 4px 4px 10px black;
     opacity: 0;
 }
 
 #rule-photo {
-    width: 350px;
+    width: clamp(250px, 60vw, 350px);
     align-self: center;
 }
 
@@ -247,6 +253,7 @@ button {
     height: 0;
     visibility: hidden;
     opacity: 0;
+    margin-inline: 10px;
 }
 
 .light-up {
@@ -254,7 +261,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 100px;
 
 }
@@ -264,7 +270,7 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 150px;
+
 }
 
 .again-div {
@@ -315,6 +321,10 @@ button {
         height: 150px;
     }
 
+    footer {
+        margin-top: 0px;
+    }
+
     .choice-box {
         width: 118px;
         height: 118px;
@@ -325,17 +335,8 @@ button {
         width: 50px;
     }
 
-    .points {
-        width: 80px;
-        height: 60px;
-    }
-
-    .logo {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 60px;
+    .bg-triangle {
+        width: 280px;
     }
 
     footer {
@@ -346,7 +347,7 @@ button {
         position: static;
         margin: 0 auto;
         transform: translate(0);
-        margin-bottom: 30px;
+        margin-block: -30px 30px;
     }
 
     .side {
@@ -356,5 +357,26 @@ button {
 
     p {
         margin-top: 30px;
+    }
+}
+
+@media (max-width:460px) {
+    .active {
+        width: 130px;
+        height: 130px;
+    }
+
+    .choice-box {
+        width: 102px;
+        height: 102px;
+        transform: translate(14%, 14%);
+    }
+
+    .choice-photo {
+        width: 50px;
+    }
+
+    .bg-triangle {
+        width: 280px;
     }
 }
