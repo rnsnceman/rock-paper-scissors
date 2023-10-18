@@ -52,8 +52,10 @@ window.addEventListener('DOMContentLoaded', e => {
     rulesButton.addEventListener('click', e => {
         rulesDiv.style.transition = '300ms';
         fadedBackground.style.transition = '300ms'
-        rulesDiv.style.visibility = 'visible';
+        rulesDiv.style.display = 'flex';
+        rulesDiv.style.visibility = 'visible'
         fadedBackground.style.visibility = 'visible';
+        fadedBackground.style.display = 'block'
         rulesDiv.style.opacity = '1'
         fadedBackground.style.opacity = '1'
     })
@@ -62,9 +64,11 @@ window.addEventListener('DOMContentLoaded', e => {
     fadedBackground.addEventListener('click', closeRules)
 
     function closeRules() {
-        if (rulesDiv.style.visibility === 'visible') {
+        if (rulesDiv.style.display === 'flex') {
+            rulesDiv.style.display = 'none'
+            fadedBackground.style.visibility = 'none';
+            fadedBackground.style.display = 'none'
             rulesDiv.style.visibility = 'hidden'
-            fadedBackground.style.visibility = 'hidden';
             rulesDiv.style.opacity = '0'
             fadedBackground.style.opacity = '0'
         }
@@ -72,7 +76,7 @@ window.addEventListener('DOMContentLoaded', e => {
 
     function startAnimation() {
         setTimeout(() => {
-            choiceMenu.style.height = '500px';
+            choiceMenu.style.height = 'clamp(320px, 75vw , 500px)';
             choiceMenu.style.transition = '1s'
         }, 100)
 
@@ -193,7 +197,7 @@ window.addEventListener('DOMContentLoaded', e => {
         setTimeout(() => {
             vsMenu.style.visibility = 'visible'
             vsMenu.style.opacity = '1'
-            vsMenu.style.height = '320px'
+            vsMenu.style.height = 'clamp(250px, 50vw,320px)'
             vsMenu.style.transition = '500ms'
             setTimeout(() => {
                 let cpuClone = active[0];
