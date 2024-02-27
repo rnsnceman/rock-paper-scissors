@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./RockPaperScissorsScreenshot.png)
+![](./RockPaperScissorsScreenshot1.png)
 
 ### Links
 
